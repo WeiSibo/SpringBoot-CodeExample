@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-01-helloworld/spring-boot-01-helloworld.iml" filepath="$PROJECT_DIR$/spring-boot-01-helloworld/spring-boot-01-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-01-helloworld-quick/spring-boot-01-helloworld-quick.iml" filepath="$PROJECT_DIR$/spring-boot-01-helloworld-quick/spring-boot-01-helloworld-quick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-02-autoconfig/spring-boot-02-autoconfig.iml" filepath="$PROJECT_DIR$/spring-boot-02-autoconfig/spring-boot-02-autoconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-02-config/spring-boot-02-config.iml" filepath="$PROJECT_DIR$/spring-boot-02-config/spring-boot-02-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-02-config-02/spring-boot-02-config-02.iml" filepath="$PROJECT_DIR$/spring-boot-02-config-02/spring-boot-02-config-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-03-logging/spring-boot-03-logging.iml" filepath="$PROJECT_DIR$/spring-boot-03-logging/spring-boot-03-logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-04-web-restfulcrud/spring-boot-04-web-restfulcrud.iml" filepath="$PROJECT_DIR$/spring-boot-04-web-restfulcrud/spring-boot-04-web-restfulcrud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-project/springboot-project.iml" filepath="$PROJECT_DIR$/springboot-project/springboot-project.iml" />
+    </modules>
+  </component>
+</project>
