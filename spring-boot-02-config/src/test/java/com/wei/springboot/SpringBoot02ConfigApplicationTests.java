@@ -1,5 +1,6 @@
 package com.wei.springboot;
 
+import com.wei.springboot.bean.Hello;
 import com.wei.springboot.bean.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,15 +16,19 @@ import org.springframework.context.ApplicationContext;
 class SpringBoot02ConfigApplicationTests {
 
     @Autowired
-    Person person;
+    private Person person;
 
     @Autowired
-    ApplicationContext ioc;
+    private ApplicationContext ioc;
 
     @Test
     void testHello(){
         boolean b = ioc.containsBean("hello");
         System.out.println(b);
+        Hello hello = (Hello) ioc.getBean("hello");
+        if(hello != null){
+            System.out.println(hello);
+        }
     }
 
     @Test

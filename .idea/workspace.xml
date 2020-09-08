@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a694d43f-de08-4666-a7e2-7349e7bd5bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-01-helloworld-quick/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-01-helloworld-quick/src/main/java/com/wei/springboot/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-01-helloworld-quick/src/main/java/com/wei/springboot/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-01-helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-01-helloworld/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-01-helloworld/src/main/java/com/wei/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-01-helloworld/src/main/java/com/wei/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/person.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/SpringBoot02ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/SpringBoot02ConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/bean/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/config/MyAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/java/com/wei/springboot/config/MyAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/test/java/com/wei/springboot/SpringBoot02ConfigApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/test/java/com/wei/springboot/SpringBoot02ConfigApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/target/classes/com/wei/springboot/bean/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/target/classes/com/wei/springboot/bean/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/target/test-classes/com/wei/springboot/SpringBoot02ConfigApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/target/test-classes/com/wei/springboot/SpringBoot02ConfigApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../campus-platform" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,7 +70,39 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Spring Boot.HelloWorldMainApplication">
+  <component name="RunManager" selected="JUnit.SpringBoot02ConfigApplicationTests.contextLoads">
+    <configuration name="SpringBoot02ConfigApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-02-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wei.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wei.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.wei.springboot.SpringBoot02ConfigApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot02ConfigApplicationTests.testHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-02-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wei.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wei.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.wei.springboot.SpringBoot02ConfigApplicationTests" />
+      <option name="METHOD_NAME" value="testHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWorldMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-01-helloworld" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wei.HelloWorldMainApplication" />
@@ -106,6 +159,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.testHello" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,7 +181,8 @@
       <updated>1599400249220</updated>
       <workItem from="1599400250385" duration="1857000" />
       <workItem from="1599442404820" duration="17000" />
-      <workItem from="1599472128193" duration="5824000" />
+      <workItem from="1599472128193" duration="5920000" />
+      <workItem from="1599564729690" duration="6041000" />
     </task>
     <servers />
   </component>
@@ -127,45 +190,49 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599442420812">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599571069363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599442420812" />
-    <state width="1493" height="356" key="GridCell.Tab.0.bottom" timestamp="1599483095398">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571069363" />
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1599571680530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.0.center" timestamp="1599483095398">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571680530" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1599571680530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.0.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.0.left" timestamp="1599483095398">
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571680530" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1599571680530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.0.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.0.right" timestamp="1599483095398">
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571680530" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1599571680530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.0.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.1.bottom" timestamp="1599483095398">
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571680530" />
+    <state width="1493" height="165" key="GridCell.Tab.1.bottom" timestamp="1599571419852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.1.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.1.center" timestamp="1599483095398">
+    <state width="1493" height="165" key="GridCell.Tab.1.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571419852" />
+    <state width="1493" height="165" key="GridCell.Tab.1.center" timestamp="1599571419852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.1.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.1.left" timestamp="1599483095398">
+    <state width="1493" height="165" key="GridCell.Tab.1.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571419852" />
+    <state width="1493" height="165" key="GridCell.Tab.1.left" timestamp="1599571419852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.1.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
-    <state width="1493" height="356" key="GridCell.Tab.1.right" timestamp="1599483095398">
+    <state width="1493" height="165" key="GridCell.Tab.1.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571419852" />
+    <state width="1493" height="165" key="GridCell.Tab.1.right" timestamp="1599571419852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="356" key="GridCell.Tab.1.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599483095398" />
+    <state width="1493" height="165" key="GridCell.Tab.1.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599571419852" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1599482760691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="56" key="SettingsEditor/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599482760691" />
+    <state width="525" height="588" key="SwitcherDM" timestamp="1599570123302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="525" height="588" key="SwitcherDM/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599570123302" />
   </component>
 </project>
