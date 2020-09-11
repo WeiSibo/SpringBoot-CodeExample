@@ -1,0 +1,94 @@
+2020-09-11 17:56:44.654  INFO 12028 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 12028 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 17:56:44.656 DEBUG 12028 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 17:56:44.656  INFO 12028 --- [main] c.w.s.SpringBoot03LoggingApplication     : No active profile set, falling back to default profiles: default
+2020-09-11 17:56:45.465  INFO 12028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-11 17:56:45.475  INFO 12028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 17:56:45.476  INFO 12028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 17:56:45.612  INFO 12028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 17:56:45.612  INFO 12028 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 914 ms
+2020-09-11 17:56:45.750  INFO 12028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 17:56:45.852  INFO 12028 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-09-11 17:56:45.857  INFO 12028 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-11 17:56:45.860 ERROR 12028 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-09-11 17:56:45.862  INFO 12028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-11 17:57:02.584  INFO 8084 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 8084 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 17:57:02.588 DEBUG 8084 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 17:57:02.588  INFO 8084 --- [main] c.w.s.SpringBoot03LoggingApplication     : No active profile set, falling back to default profiles: default
+2020-09-11 17:57:03.260  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 17:57:03.266  INFO 8084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 17:57:03.267  INFO 8084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 17:57:03.334  INFO 8084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 17:57:03.334  INFO 8084 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 704 ms
+2020-09-11 17:57:03.426  INFO 8084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 17:57:03.528  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 17:57:03.529  INFO 8084 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.436 seconds (JVM running for 2.72)
+2020-09-11 17:57:59.309  INFO 12116 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 12116 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 17:57:59.311 DEBUG 12116 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 17:57:59.311  INFO 12116 --- [main] c.w.s.SpringBoot03LoggingApplication     : The following profiles are active: dev
+2020-09-11 17:58:00.032  INFO 12116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 17:58:00.038  INFO 12116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 17:58:00.038  INFO 12116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 17:58:00.103  INFO 12116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 17:58:00.103  INFO 12116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 762 ms
+2020-09-11 17:58:00.194  INFO 12116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 17:58:00.296  INFO 12116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 17:58:00.298  INFO 12116 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.278 seconds (JVM running for 2.539)
+2020-09-11 17:59:10.868  INFO 6484 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 6484 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 17:59:10.870 DEBUG 6484 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 17:59:10.870  INFO 6484 --- [main] c.w.s.SpringBoot03LoggingApplication     : The following profiles are active: dev
+2020-09-11 17:59:11.552  INFO 6484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 17:59:11.559  INFO 6484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 17:59:11.559  INFO 6484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 17:59:11.628  INFO 6484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 17:59:11.629  INFO 6484 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 728 ms
+2020-09-11 17:59:11.720  INFO 6484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 17:59:11.821  INFO 6484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 17:59:11.823  INFO 6484 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.242 seconds (JVM running for 2.55)
+2020-09-11 18:00:35.880  INFO 16788 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 16788 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 18:00:35.882 DEBUG 16788 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 18:00:35.883  INFO 16788 --- [main] c.w.s.SpringBoot03LoggingApplication     : The following profiles are active: dev
+2020-09-11 18:00:36.523  INFO 16788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 18:00:36.529  INFO 16788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 18:00:36.529  INFO 16788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 18:00:36.593  INFO 16788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 18:00:36.593  INFO 16788 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 677 ms
+2020-09-11 18:00:36.685  INFO 16788 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 18:00:36.782  INFO 16788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 18:00:36.784  INFO 16788 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.196 seconds (JVM running for 2.462)
+2020-09-11 18:01:00.305  INFO 17176 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 17176 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 18:01:00.307 DEBUG 17176 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 18:01:00.307  INFO 17176 --- [main] c.w.s.SpringBoot03LoggingApplication     : The following profiles are active: dev
+2020-09-11 18:01:00.959  INFO 17176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 18:01:00.965  INFO 17176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 18:01:00.965  INFO 17176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 18:01:01.029  INFO 17176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 18:01:01.029  INFO 17176 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 689 ms
+2020-09-11 18:01:01.120  INFO 17176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 18:01:01.220  INFO 17176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 18:01:01.222  INFO 17176 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.229 seconds (JVM running for 2.482)
+2020-09-11 18:04:36.776  INFO 13820 --- [main] c.w.s.SpringBoot03LoggingApplication     : Starting SpringBoot03LoggingApplication on DESKTOP-N89QN3M with PID 13820 (G:\SpringBoot\spring-boot-03-logging\target\classes started by 89219 in G:\SpringBoot)
+2020-09-11 18:04:36.778 DEBUG 13820 --- [main] c.w.s.SpringBoot03LoggingApplication     : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-09-11 18:04:36.778  INFO 13820 --- [main] c.w.s.SpringBoot03LoggingApplication     : The following profiles are active: dev
+2020-09-11 18:04:37.456  INFO 13820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-09-11 18:04:37.462  INFO 13820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 18:04:37.462  INFO 13820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-09-11 18:04:37.528  INFO 13820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 18:04:37.529  INFO 13820 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 710 ms
+2020-09-11 18:04:37.636  INFO 13820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 18:04:37.755  INFO 13820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-09-11 18:04:37.757  INFO 13820 --- [main] c.w.s.SpringBoot03LoggingApplication     : Started SpringBoot03LoggingApplication in 1.31 seconds (JVM running for 2.621)

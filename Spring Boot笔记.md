@@ -1260,10 +1260,9 @@ SpringBoot修改日志的默认配置
 ```properties
 logging.level.com.atguigu=trace
 
-
-#logging.path=
 # 不指定路径在当前项目下生成springboot.log日志
 # 可以指定完整的路径；
+#logging.path=
 #logging.file=G:/springboot.log
 
 # 在当前磁盘的根路径下创建spring文件夹和里面的log文件夹；使用 spring.log 作为默认文件
@@ -1293,7 +1292,7 @@ logging.pattern.file=%d{yyyy-MM-dd} === [%thread] === %-5level === %logger{50} =
 
 logback.xml：直接就被日志框架识别了；
 
-**logback-spring.xml**：日志框架就不直接加载日志的配置项，由SpringBoot解析日志配置，可以使用SpringBoot的高级Profile功能
+**logback-spring.xml**：日志框架就不直 接加载日志的配置项，由SpringBoot解析日志配置，可以使用SpringBoot的高级Profile功能
 
 ```xml
 <springProfile name="staging">
@@ -1369,16 +1368,16 @@ slf4j+log4j的方式；
 切换为log4j2
 
 ```xml
-   <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+ <dependency>
+ 	<groupId>org.springframework.boot</groupId>
+ 	<artifactId>spring-boot-starter-web</artifactId>
+	<exclusions>
+		<exclusion>
+			<artifactId>spring-boot-starter-logging</artifactId>
+ 			<groupId>org.springframework.boot</groupId>
+            </exclusion>
+     	</exclusions>
+ </dependency>
 
 <dependency>
   <groupId>org.springframework.boot</groupId>

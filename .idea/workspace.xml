@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a694d43f-de08-4666-a7e2-7349e7bd5bfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-02-config-02/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-02-config-02/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-02-config-02/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring Boot笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring Boot笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/config/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/src/main/resources/config/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config-02/target/classes/config/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-02-config/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-03-logging/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-03-logging/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-03-logging/springboot.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-03-logging/springboot.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-03-logging/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-03-logging/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-03-logging/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-03-logging/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +43,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -60,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../campus-platform-index/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-03-logging/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,7 +65,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBoot02Config02Application">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\SpringBoot\spring-boot-03-logging\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBoot03LoggingApplication">
     <configuration name="SpringBoot02ConfigApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-02-config" />
       <extension name="coverage">
@@ -101,6 +98,37 @@
       <option name="PACKAGE_NAME" value="com.wei.springboot" />
       <option name="MAIN_CLASS_NAME" value="com.wei.springboot.SpringBoot02ConfigApplicationTests" />
       <option name="METHOD_NAME" value="testHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot03LoggingApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-03-logging" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wei.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wei.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.wei.springboot.SpringBoot03LoggingApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot03LoggingApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-03-logging" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wei.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wei.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.wei.springboot.SpringBoot03LoggingApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,6 +172,9 @@
     <configuration name="SpringBoot03LoggingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-03-logging" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wei.springboot.SpringBoot03LoggingApplication" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=default" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,8 +193,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.testHello" />
+      <item itemvalue="JUnit.SpringBoot03LoggingApplicationTests" />
+      <item itemvalue="JUnit.SpringBoot03LoggingApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.HelloWorldMainApplication" />
+      <item itemvalue="Spring Boot.SpringBoot01HelloWorldQuickApplication" />
+      <item itemvalue="Spring Boot.SpringBoot02AutoconfigApplication" />
+      <item itemvalue="Spring Boot.SpringBoot02Config02Application" />
+      <item itemvalue="Spring Boot.SpringBoot02ConfigApplication" />
+      <item itemvalue="Spring Boot.SpringBoot03LoggingApplication" />
+      <item itemvalue="Spring Boot.SpringBoot04WebRestfulcrudApplication" />
+      <item itemvalue="Spring Boot.SpringbootProjectApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringBoot03LoggingApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SpringBoot03LoggingApplicationTests" />
         <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SpringBoot02ConfigApplicationTests.testHello" />
       </list>
@@ -188,6 +235,7 @@
       <workItem from="1599564729690" duration="6378000" />
       <workItem from="1599719930532" duration="2443000" />
       <workItem from="1599725267486" duration="12000" />
+      <workItem from="1599812799251" duration="5874000" />
     </task>
     <servers />
   </component>
@@ -199,6 +247,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599720086392" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599818949509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818949509" />
     <state x="547" y="102" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1599720992400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -207,45 +259,49 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725279508" />
-    <state width="1493" height="121" key="GridCell.Tab.0.bottom" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.0.bottom" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.0.center" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.0.center" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.0.left" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.0.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.0.left" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.0.right" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.0.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.0.right" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.1.bottom" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.0.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1599818952378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.1.center" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952378" />
+    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.1.left" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.1.center/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1599818952377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state width="1493" height="121" key="GridCell.Tab.1.right" timestamp="1599725237130">
+    <state width="1493" height="257" key="GridCell.Tab.1.left/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952377" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1599818952378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599725237130" />
-    <state x="270" y="56" key="SettingsEditor" timestamp="1599482760691">
+    <state width="1493" height="257" key="GridCell.Tab.1.right/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818952378" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1599818303450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599482760691" />
-    <state width="525" height="588" key="SwitcherDM" timestamp="1599570123302">
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599818303450" />
+    <state width="525" height="588" key="SwitcherDM" timestamp="1599813083278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="525" height="588" key="SwitcherDM/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599570123302" />
+    <state width="525" height="588" key="SwitcherDM/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599813083278" />
+    <state x="468" y="144" width="600" height="536" key="find.popup" timestamp="1599813056263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="144" width="600" height="536" key="find.popup/0.0.1536.824/-1440.95.1074.720@0.0.1536.824" timestamp="1599813056263" />
   </component>
 </project>
