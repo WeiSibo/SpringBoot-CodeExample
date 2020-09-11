@@ -1,5 +1,8 @@
-server:
-  port: 8070
+#server:
+#  port: 8070
+spring:
+  profiles:
+    active: dev
 
 person:
   lastName: zhangsan@qq.com${random.uuid} #lastName = last-name

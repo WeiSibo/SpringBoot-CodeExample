@@ -684,11 +684,11 @@ spring:
     active: prod
 
 ---
+
 server:
   port: 8083
 spring:
   profiles: dev
-
 
 ---
 
@@ -734,7 +734,7 @@ springboot 启动会扫描以下位置的application.properties或者application
 
 SpringBoot会从这四个位置全部加载主配置文件；**互补配置**；
 
-
+（SpringBoot2.x自行测试时前两种位置的配置文件读取不到）
 
 ==我们还可以通过spring.config.location来改变默认的配置文件位置==
 
@@ -806,7 +806,7 @@ java -jar spring-boot-02-config-02-0.0.1-SNAPSHOT.jar --server.port=8087  --serv
 
 **2）、@EnableAutoConfiguration 作用：**
 
- -  利用EnableAutoConfigurationImportSelector给容器中导入一些组件？
+ -  利用EnableAutoConfigurationImportSelector给容器中导入一些组件
 
 - 可以查看selectImports()方法的内容；
 
@@ -1077,7 +1077,7 @@ Negative matches:（没有启动，没有匹配成功的自动配置类）
 
 ​		3、高大上的几个功能？异步模式？自动归档？xxxx？  zhanglogging-good.jar？
 
-​		4、将以前框架卸下来？换上新的框架，重新修改之前相关的API；zhanglogging-prefect.jar；
+​		4、将以前框架卸下来？换上新的框架，重新修改之前相关的API；zhanglogging-perfect.jar；
 
 ​		5、JDBC---数据库驱动；
 
@@ -1103,7 +1103,7 @@ JUL、JCL、Jboss-logging、logback、log4j、log4j2、slf4j....
 
 
 
-SpringBoot：底层是Spring框架，Spring框架默认是用JCL；‘
+SpringBoot：底层是Spring框架，Spring框架默认使用JCL；
 
 ​	**==SpringBoot选用 SLF4j和logback；==**
 
@@ -1139,7 +1139,7 @@ public class HelloWorld {
 
 a（slf4j+logback）: Spring（commons-logging）、Hibernate（jboss-logging）、MyBatis、xxxx
 
-统一日志记录，即使是别的框架和我一起统一使用slf4j进行输出？
+统一日志记录，即使是别的框架和我一起统一使用slf4j进行输出。
 
 ![](images/legacy.png)
 
@@ -1149,7 +1149,7 @@ a（slf4j+logback）: Spring（commons-logging）、Hibernate（jboss-logging）
 
 ==2、用中间包来替换原有的日志框架；==
 
-==3、我们导入slf4j其他的实现==
+==3、我们导入slf4j其他实现==
 
 
 
@@ -1181,9 +1181,9 @@ SpringBoot使用它来做日志功能；
 
 ​	1）、SpringBoot底层也是使用slf4j+logback的方式进行日志记录
 
-​	2）、SpringBoot也把其他的日志都替换成了slf4j；
+​	2）、SpringBoot用中间替换包把其他的日志都替换成了slf4j；
 
-​	3）、中间替换包？
+​	3）、中间替换包：
 
 ```java
 @SuppressWarnings("rawtypes")
@@ -1198,7 +1198,7 @@ public abstract class LogFactory {
 
 
 
-​	4）、如果我们要引入其他框架？一定要把这个框架的默认日志依赖移除掉？
+​	4）、如果我们要引入其他框架？一定要把这个框架的默认日志依赖移除掉。
 
 ​			Spring框架用的是commons-logging；
 
