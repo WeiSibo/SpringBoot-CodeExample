@@ -1523,7 +1523,6 @@ localhost:8080/webjars/jquery/3.3.1/jquery.js
 "classpath:/resources/",
 "classpath:/static/", 
 "classpath:/public/" 
-"/"：当前项目的根路径
 ```
 
 localhost:8080/abc ===  去静态资源文件夹里面找abc
@@ -1620,9 +1619,9 @@ public class ThymeleafProperties {
 
 ![](images/2018-02-04_123955.png)
 
+th:text不会解析html（转义特殊字符），th:utext会解析html（不转义特殊字符）
 
-
-2）、表达式？
+2）、表达式，详细使用看usingThymeleaf文档。
 
 ```properties
 Simple expressions:（表达式语法）
@@ -1636,7 +1635,7 @@ Simple expressions:（表达式语法）
                 #response : (only in Web Contexts) the HttpServletResponse object.
                 #session : (only in Web Contexts) the HttpSession object.
                 #servletContext : (only in Web Contexts) the ServletContext object.
-                
+                如：
                 ${session.foo}
             3）、内置的一些工具对象：
 #execInfo : information about the template being processed.
@@ -1665,8 +1664,12 @@ Simple expressions:（表达式语法）
     </div>
     
     Message Expressions: #{...}：获取国际化内容
+    
+    
     Link URL Expressions: @{...}：定义URL；
     		@{/order/process(execId=${execId},execType='FAST')}
+    		
+    		
     Fragment Expressions: ~{...}：片段引用表达式
     		<div th:insert="~{commons :: main}">...</div>
     		
@@ -1676,18 +1679,28 @@ Literals（字面量）
       Boolean literals: true , false
       Null literal: null
       Literal tokens: one , sometext , main ,…
+      
+      
 Text operations:（文本操作）
     String concatenation: +
     Literal substitutions: |The name is ${name}|
+    
+    
 Arithmetic operations:（数学运算）
     Binary operators: + , - , * , / , %
     Minus sign (unary operator): -
+    
+    
 Boolean operations:（布尔运算）
     Binary operators: and , or
     Boolean negation (unary operator): ! , not
+    
+    
 Comparisons and equality:（比较运算）
     Comparators: > , < , >= , <= ( gt , lt , ge , le )
     Equality operators: == , != ( eq , ne )
+    
+    
 Conditional operators:条件运算（三元运算符）
     If-then: (if) ? (then)
     If-then-else: (if) ? (then) : (else)
@@ -1707,7 +1720,7 @@ Spring Boot 自动配置好了SpringMVC
 以下是SpringBoot对SpringMVC的默认配置:**==（WebMvcAutoConfiguration）==**
 
 - Inclusion of `ContentNegotiatingViewResolver` and `BeanNameViewResolver` beans.
-  - 自动配置了ViewResolver（视图解析器：根据方法的返回值得到视图对象（View），视图对象决定如何渲染（转发？重定向？））
+  - 自动配置了ViewResolver（视图解析器：根据方法的返回值得到视图对象（View），视图对象决定如何渲染（转发？or重定向？...））
   - ContentNegotiatingViewResolver：组合所有的视图解析器的；
   - ==如何定制：我们可以自己给容器中添加一个视图解析器；自动的将其组合进来；==
 
@@ -1732,19 +1745,22 @@ Spring Boot 自动配置好了SpringMVC
 		}
 ```
 
-​	==自己添加的格式化器转换器，我们只需要放在容器中即可==
+​	在SpringBoot2.x中对Formatter格式化器的配置已经不是用这个函数了。
+
+==自己添加的格式化器转换器，我们只需要放在容器中即可==
 
 - Support for `HttpMessageConverters` (see below).
 
-  - HttpMessageConverter：SpringMVC用来转换Http请求和响应的；User---Json；
+  - HttpMessageConverter：SpringMVC用来转换Http请求和响应的；比如接口要返回一个User对象，需要把User对象转换成Json对象时，HttpMessageConverter就可以将User---Json；
 
   - `HttpMessageConverters` 是从容器中确定；获取所有的HttpMessageConverter；
 
-    ==自己给容器中添加HttpMessageConverter，只需要将自己的组件注册容器中（@Bean,@Component）==
+    ==自己给容器中添加HttpMessageConverter，只需要将自己的组件注册容器中（@Bean,@Component等）==
 
-    
 
-- Automatic registration of `MessageCodesResolver` (see below).定义错误代码生成规则
+
+
+- Automatic registration of `MessageCodesResolver` (see below)。定义错误代码生成规则
 
 - Automatic use of a `ConfigurableWebBindingInitializer` bean (see below).
 
@@ -1757,9 +1773,7 @@ Spring Boot 自动配置好了SpringMVC
 
 **org.springframework.boot.autoconfigure.web：web的所有自动场景；**
 
-If you want to keep Spring Boot MVC features, and you just want to add additional [MVC configuration](https://docs.spring.io/spring/docs/4.3.14.RELEASE/spring-framework-reference/htmlsingle#mvc) (interceptors, formatters, view controllers etc.) you can add your own `@Configuration` class of type `WebMvcConfigurerAdapter`, but **without** `@EnableWebMvc`. If you wish to provide custom instances of `RequestMappingHandlerMapping`, `RequestMappingHandlerAdapter` or `ExceptionHandlerExceptionResolver` you can declare a `WebMvcRegistrationsAdapter` instance providing such components.
-
-If you want to take complete control of Spring MVC, you can add your own `@Configuration` annotated with `@EnableWebMvc`.
+![](images/sp1.jpg)
 
 ### 2、扩展SpringMVC
 
@@ -1778,9 +1792,10 @@ If you want to take complete control of Spring MVC, you can add your own `@Confi
 既保留了所有的自动配置，也能用我们扩展的配置；
 
 ```java
-//使用WebMvcConfigurerAdapter可以来扩展SpringMVC的功能
+//使用WebMvcConfigurer可以来扩展SpringMVC的功能
 @Configuration
-public class MyMvcConfig extends WebMvcConfigurerAdapter { --->WebMvcConfigurerAdapter已被移除，改用@WebMvcConfigurer
+public class MyMvcConfig extends WebMvcConfigurer {
+    --->WebMvcConfigurerAdapter(SpringBoot1.5.9)已被移除，改用			   	    @WebMvcConfigurer(SpringBoot2.x)
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
@@ -1798,23 +1813,25 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter { --->WebMvcConfigurerA
 ​	2）、在做其他自动配置时会导入；@Import(**EnableWebMvcConfiguration**.class)
 
 ```java
-    @Configuration
-	public static class EnableWebMvcConfiguration extends DelegatingWebMvcConfiguration {
-      private final WebMvcConfigurerComposite configurers = new WebMvcConfigurerComposite();
+@Configuration(proxyBeanMethods = false)
+public static class EnableWebMvcConfiguration extends DelegatingWebMvcConfiguration implements ResourceLoaderAware
 
-	 //从容器中获取所有的WebMvcConfigurer
-      @Autowired(required = false)
-      public void setConfigurers(List<WebMvcConfigurer> configurers) {
-          if (!CollectionUtils.isEmpty(configurers)) {
-              this.configurers.addWebMvcConfigurers(configurers);
-            	//一个参考实现；将所有的WebMvcConfigurer相关配置都来一起调用；  
-            	@Override
-             // public void addViewControllers(ViewControllerRegistry registry) {
-              //    for (WebMvcConfigurer delegate : this.delegates) {
-               //       delegate.addViewControllers(registry);
-               //   }
-              }
-          }
+//从容器中获取所有的WebMvcConfigurer
+private final WebMvcConfigurerComposite configurers = new WebMvcConfigurerComposite();
+
+
+	@Autowired(required = false)
+	public void setConfigurers(List<WebMvcConfigurer> configurers) {
+		if (!CollectionUtils.isEmpty(configurers)) {
+			this.configurers.addWebMvcConfigurers(configurers);
+            //一个参考实现
+           // @Override
+			//public void addViewControllers(ViewControllerRegistry registry) {
+				//for (WebMvcConfigurer delegate : this.delegates) {
+				//delegate.addViewControllers(registry);
+			//}
+		}
+		}
 	}
 ```
 
@@ -1822,7 +1839,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter { --->WebMvcConfigurerA
 
 ​	4）、我们的配置类也会被调用；
 
-​	效果：SpringMVC的自动配置和我们的扩展配置都会起作用；
+​	    --->效果：SpringMVC的自动配置和我们的扩展配置都会起作用；
 
 ### 3、全面接管SpringMVC；
 
@@ -1831,7 +1848,7 @@ SpringBoot对SpringMVC的自动配置不需要了，所有都是我们自己配�
 **我们需要在配置类中添加@EnableWebMvc即可；**
 
 ```java
-//使用WebMvcConfigurerAdapter可以来扩展SpringMVC的功能
+//使用WebMvcConfigurer可以来扩展SpringMVC的功能
 @EnableWebMvc
 @Configuration
 public class MyMvcConfig extends WebMvcConfigurerAdapter {
@@ -1866,16 +1883,14 @@ public class DelegatingWebMvcConfiguration extends WebMvcConfigurationSupport {
 3）、
 
 ```java
-@Configuration
-@ConditionalOnWebApplication
-@ConditionalOnClass({ Servlet.class, DispatcherServlet.class,
-		WebMvcConfigurerAdapter.class })
-//容器中没有这个组件的时候，这个自动配置类才生效
-@ConditionalOnMissingBean(WebMvcConfigurationSupport.class)
+@Configuration(proxyBeanMethods = false)
+@ConditionalOnWebApplication(type = Type.SERVLET)
+@ConditionalOnClass({ Servlet.class, DispatcherServlet.class, WebMvcConfigurer.class })
+@ConditionalOnMissingBean(WebMvcConfigurationSupport.class) √ 
 @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE + 10)
-@AutoConfigureAfter({ DispatcherServletAutoConfiguration.class,
+@AutoConfigureAfter({ DispatcherServletAutoConfiguration.class, TaskExecutionAutoConfiguration.class,
 		ValidationAutoConfiguration.class })
-public class WebMvcAutoConfiguration {
+public class WebMvcAutoConfiguration
 ```
 
 4）、@EnableWebMvc将WebMvcConfigurationSupport组件导入进来；

@@ -11,20 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
+//@EnableWebMvc
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/guigu").setViewName("success");
+        registry.addViewController("/wei").setViewName("success");
     }
 
     @Bean
     public WebMvcConfigurer webMvcConfigurer(){
-        WebMvcConfigurer configurer = new WebMvcConfigurer() {
+        return new WebMvcConfigurer() {
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
                 registry.addViewController("/").setViewName("login");
-                registry.addViewController("/index.html").setViewName("login");
+                registry.addViewController("/login.html").setViewName("login");
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
 
@@ -32,10 +33,9 @@ public class MyMvcConfig implements WebMvcConfigurer {
             public void addInterceptors(InterceptorRegistry registry) {
                 //SpringBoot已经做好了静态资源映射
                 registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
-                        excludePathPatterns("/index.html", "/", "/login");
+                        excludePathPatterns("/login.html", "/", "/login");
             }
         };
-        return configurer;
     }
 
     @Bean
