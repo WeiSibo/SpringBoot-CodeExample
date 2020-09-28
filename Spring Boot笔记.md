@@ -2216,7 +2216,7 @@ URI：  /资源名称/资源标识       HTTP请求方式区分对资源CRUD操�
 | 来到添加页面                         | emp     | GET      |
 | 添加员工                             | emp     | POST     |
 | 来到修改页面（查出员工进行信息回显） | emp/1   | GET      |
-| 修改员工                             | emp     | PUT      |
+| 修改员工                             | emp/1   | PUT      |
 | 删除员工                             | emp/1   | DELETE   |
 
 3）、员工列表：
@@ -2250,7 +2250,7 @@ insert的公共片段在div标签中
 
 **th:include**：将被引入的片段的内容包含进这个标签中
 
-
+代码效果如下：
 
 ```html
 <footer th:fragment="copy">

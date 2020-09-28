@@ -33,7 +33,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
             public void addInterceptors(InterceptorRegistry registry) {
                 //SpringBoot已经做好了静态资源映射
                 registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
-                        excludePathPatterns("/login.html", "/", "/login");
+                        excludePathPatterns("/login.html", "/", "/login", "/css/**", "/js/**", "/img/**");
             }
         };
     }
