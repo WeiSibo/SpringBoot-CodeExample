@@ -5,18 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>成功!</h1>
-    <div th:text="${hello}"></div>
-    <div th:utext="${hello}"></div>
+<h1>成功!</h1>
+<div th:text="${hello}"></div>
+<div th:utext="${hello}"></div>
 
-    <hr/>
+<hr/>
 
-    <h4 th:text="${user}" th:each="user:${users}"></h4>
+<h4 th:text="${user}" th:each="user:${users}"></h4>
 
-    <hr/>
+<hr/>
 
-    <h4>
-        <span th:each="user:${users}">[[${user}]]&nbsp;</span>
-    </h4>
+<h4>
+    <span th:each="user:${users}">[[${user}]]&nbsp;</span>
+</h4>
 </body>
 </html>

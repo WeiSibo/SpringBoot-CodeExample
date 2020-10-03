@@ -16,11 +16,11 @@ public class SpringBoot04WebRestfulcrudApplication {
     }
 
     @Bean
-    public ViewResolver myViewResolver(){
+    public ViewResolver myViewResolver() {
         return new MyViewResolver();
     }
 
-    private static class MyViewResolver implements ViewResolver{
+    private static class MyViewResolver implements ViewResolver {
 
         @Override
         public View resolveViewName(String viewName, Locale locale) throws Exception {

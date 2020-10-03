@@ -12,6 +12,7 @@
         <module name="spring-boot-03-logging" />
         <module name="spring-boot-01-helloworld-quick" />
         <module name="spring-boot-04-web-restfulcrud" />
+        <module name="springboot-04-web-jsp" />
         <module name="spring-boot-02-autoconfig" />
         <module name="springboot-project" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="spring-boot-02-config-02" target="1.8" />
       <module name="spring-boot-03-logging" target="1.8" />
       <module name="spring-boot-04-web-restfulcrud" target="1.8" />
+      <module name="springboot-04-web-jsp" target="1.8" />
       <module name="springboot-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -36,6 +38,7 @@
       <module name="spring-boot-02-config-02" options="-parameters" />
       <module name="spring-boot-03-logging" options="-parameters" />
       <module name="spring-boot-04-web-restfulcrud" options="-parameters" />
+      <module name="springboot-04-web-jsp" options="-parameters" />
       <module name="springboot-project" options="-parameters" />
     </option>
   </component>

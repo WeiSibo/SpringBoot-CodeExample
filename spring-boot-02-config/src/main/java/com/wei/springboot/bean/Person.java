@@ -9,14 +9,15 @@ import javax.validation.constraints.Email;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
 /*
-* 将配置文件中配置的每一个属性的值，映射到组件中
-* @ConfigurationProperties 将本类中的所有属性和配置文件中相关的配置进行绑定
-* prefix = "person" 配置文件中哪个下面的所有属性进行一一映射
-* 只有这个组件是容器中的组件(@Component)，才能使用容器@ConfigurationProperties提供的功能类
-*
-* @ConfigurationProperties默认从全局配置文件中获取值
-* */
+ * 将配置文件中配置的每一个属性的值，映射到组件中
+ * @ConfigurationProperties 将本类中的所有属性和配置文件中相关的配置进行绑定
+ * prefix = "person" 配置文件中哪个下面的所有属性进行一一映射
+ * 只有这个组件是容器中的组件(@Component)，才能使用容器@ConfigurationProperties提供的功能类
+ *
+ * @ConfigurationProperties默认从全局配置文件中获取值
+ * */
 //@PropertySource(value = {"classpath:person.properties"})
 @Component
 @ConfigurationProperties(prefix = "person")

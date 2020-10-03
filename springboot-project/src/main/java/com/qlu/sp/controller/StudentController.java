@@ -14,11 +14,11 @@ public class StudentController {
     private IStudentService service;
 
     @RequestMapping("/saveOrUpdate")
-    public String saveOrUpdate(Student student){
+    public String saveOrUpdate(Student student) {
         System.out.println("保存");
-        if(student.getId() == null){
+        if (student.getId() == null) {
             service.save(student);
-        }else{
+        } else {
             service.update(student);
         }
         return "保存成功";

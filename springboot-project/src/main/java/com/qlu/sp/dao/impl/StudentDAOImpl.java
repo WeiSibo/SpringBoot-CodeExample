@@ -17,7 +17,7 @@ public class StudentDAOImpl implements IStudentDAO {
     @Override
     public void save(Student student) {
         jdbcTemplate.update("INSERT INTO 计科18 (stuname,stunum,clas,telephone,address,goaddress," +
-                "aparttime,returntime,remarks) VALUES (?,?,?,?,?,?,?,?,?)",
+                        "aparttime,returntime,remarks) VALUES (?,?,?,?,?,?,?,?,?)",
                 student.getName(), student.getStuNum(), student.getClas(),
                 student.getTelephone(), student.getAddress(), student.getGoAddress(),
                 student.getApartTime(), student.getReturnTime(), student.getRemarks());

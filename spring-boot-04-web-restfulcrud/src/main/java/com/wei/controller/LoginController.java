@@ -18,12 +18,12 @@ public class LoginController {
     public String login(@RequestParam("username") String username,
                         @RequestParam("password") String password,
                         Map<String, Object> map,
-                        HttpSession session){
-        if(!StringUtils.isEmpty(username) && password.equals("123456")){
+                        HttpSession session) {
+        if (!StringUtils.isEmpty(username) && password.equals("123456")) {
             //登陆成功，防止表单重复提交，可以重定向到主ye
             session.setAttribute("loginUser", username);
             return "redirect:/main.html";
-        }else{
+        } else {
             map.put("msg", "用户名或密码错误");
             return "login";
         }

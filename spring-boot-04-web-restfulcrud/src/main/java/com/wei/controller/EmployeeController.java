@@ -21,7 +21,7 @@ public class EmployeeController {
 
     //查询所有员工返回列表页面
     @GetMapping("/emps")
-    public String list(Model model){
+    public String list(Model model) {
         Collection<Employee> employees = employeeDao.getAll();
         model.addAttribute("emps", employees);
         return "emp/list";
@@ -29,7 +29,7 @@ public class EmployeeController {
 
     //来到员工添加页面
     @GetMapping("/emp")
-    public String toAddPage(Model model){
+    public String toAddPage(Model model) {
         Collection<Department> departments = departmentDao.getDepartments();
         model.addAttribute("depts", departments);
         return "emp/add";
@@ -38,7 +38,7 @@ public class EmployeeController {
     //员工添加
     //SpringMVC自动将请求参数和入参对象的属性进行一一绑定；要求请求参数的名字和JavaBean入参的对象里面的属性名一致
     @PostMapping("/emp")
-    public String addEmp(Employee employee){
+    public String addEmp(Employee employee) {
 
         System.out.println("employee = " + employee);
         employeeDao.save(employee);
@@ -49,7 +49,7 @@ public class EmployeeController {
     //来到修改页面
     @GetMapping("/emp/{id}")
     public String toEditPage(@PathVariable("id") Integer id,
-                             Model model){
+                             Model model) {
         Employee employee = employeeDao.get(id);
         model.addAttribute("emp", employee);
         Collection<Department> departments = departmentDao.getDepartments();
@@ -59,7 +59,7 @@ public class EmployeeController {
 
     //员工修改
     @PutMapping("/emp")
-    public String updateEmployee(Employee employee){
+    public String updateEmployee(Employee employee) {
         System.out.println(employee);
         employeeDao.save(employee);
         return "redirect:/emps";
@@ -67,7 +67,7 @@ public class EmployeeController {
 
     //员工删除
     @DeleteMapping("/emp/{id}")
-    public String deleteEmployee(@PathVariable("id") Integer id){
+    public String deleteEmployee(@PathVariable("id") Integer id) {
         employeeDao.delete(id);
 
         return "redirect:/emps";

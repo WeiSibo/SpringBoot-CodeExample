@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 /*
-* SpringBoot单元测试
-*
-* 可以在测试期间很方便的进行自动注入等容器的功能
-* */
+ * SpringBoot单元测试
+ *
+ * 可以在测试期间很方便的进行自动注入等容器的功能
+ * */
 
 @SpringBootTest
 class SpringBoot02ConfigApplicationTests {
@@ -22,11 +22,11 @@ class SpringBoot02ConfigApplicationTests {
     private ApplicationContext ioc;
 
     @Test
-    void testHello(){
+    void testHello() {
         boolean b = ioc.containsBean("hello");
         System.out.println(b);
         Hello hello = (Hello) ioc.getBean("hello");
-        if(hello != null){
+        if (hello != null) {
             System.out.println(hello);
         }
     }
